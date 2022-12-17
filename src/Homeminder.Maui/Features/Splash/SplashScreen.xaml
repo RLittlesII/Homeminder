@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maui="clr-namespace:Homeminder.Maui"
+             x:Class="Homeminder.Maui.SplashScreen"
+             x:DataType="maui:SplashViewModel">
+<StackLayout>
+    <Image Source="rsg.svg" />
+    <ActivityIndicator
+        IsEnabled="{Binding IsBusy}"
+        IsRunning="{Binding IsBusy}"
+        IsVisible="{Binding IsBusy}" />
+</StackLayout>
+</ContentPage>

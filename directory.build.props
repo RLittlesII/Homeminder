@@ -4,7 +4,7 @@
         <Company>Rocket Surgeons Guild</Company>
         <Copyright>Copyright Rodney Littles, II © $([System.DateTime]::Now.ToString('yyyy'))</Copyright>
         <RepositoryType>git</RepositoryType>
-        <LangVersion>latest</LanguageVersion>
+        <LangVersion>10</LangVersion>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
         <Features>strict</Features>

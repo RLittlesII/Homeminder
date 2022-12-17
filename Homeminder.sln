@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E78AC10D-DD0E-45EC-9C74-6F1478A68692}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{95B01ABB-DA20-479D-8404-D779C1FBB548}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ui", "ui", "{708D2DCA-42AF-4ADC-BBBB-4A9194EBFFE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "src\Core\Core.csproj", "{1C3DEADD-5539-4CA0-A93B-EFBFDB1A9612}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homeminder.Maui", "src\Homeminder.Maui\Homeminder.Maui.csproj", "{79A8E555-BDD3-4EA9-BEB9-D98AF1AD2C02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{B65959BD-C6A2-4C1F-B084-89D4D38F6291}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		analyzers.ruleset = analyzers.ruleset
+		directory.build.props = directory.build.props
+		directory.build.targets = directory.build.targets
+		directory.packages.props = directory.packages.props
+		LICENSE = LICENSE
+		README.md = README.md
+		stylecop.json = stylecop.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{969EAB6E-3C79-4EDB-A581-B3C90EBE7B48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C3DEADD-5539-4CA0-A93B-EFBFDB1A9612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3DEADD-5539-4CA0-A93B-EFBFDB1A9612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3DEADD-5539-4CA0-A93B-EFBFDB1A9612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3DEADD-5539-4CA0-A93B-EFBFDB1A9612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79A8E555-BDD3-4EA9-BEB9-D98AF1AD2C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79A8E555-BDD3-4EA9-BEB9-D98AF1AD2C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79A8E555-BDD3-4EA9-BEB9-D98AF1AD2C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79A8E555-BDD3-4EA9-BEB9-D98AF1AD2C02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1C3DEADD-5539-4CA0-A93B-EFBFDB1A9612} = {E78AC10D-DD0E-45EC-9C74-6F1478A68692}
+		{79A8E555-BDD3-4EA9-BEB9-D98AF1AD2C02} = {708D2DCA-42AF-4ADC-BBBB-4A9194EBFFE0}
+	EndGlobalSection
+EndGlobal

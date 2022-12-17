@@ -46,27 +46,24 @@
         <PackageVersion Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.1.10" />
         <PackageVersion Include="NodaTime" Version="3.1.0" />
         <PackageVersion Include="Humanizer" Version="2.7.9" />
-        <PackageVersion Include="Prism.Forms" Version="8.1.97" />
-        <PackageVersion Include="Prism.Plugin.Popups" Version="8.0.76" />
-        <PackageVersion Include="Prism.Microsoft.DependencyInjection.Extensions" Version="8.0.62" />
-        <PackageVersion Include="ReactiveUI" Version="13.3.2" />
-        <PackageVersion Include="ReactiveUI.Fody" Version="13.3.2" />
-        <PackageVersion Include="ReactiveUI.XamForms" Version="13.3.2" />
+        <PackageVersion Include="Prism.Maui" Version="8.1.273-pre" />
+        <PackageVersion Include="Prism.DryIoc.Maui" Version="8.1.273-pre" />
+        <PackageVersion Include="ReactiveUI" Version="18.4.1" />
+        <PackageVersion Include="ReactiveUI.Fody" Version="18.4.1" />
+        <PackageVersion Include="ReactiveUI.Maui" Version="18.4.1" />
         <PackageVersion Include="ReactiveMarbles.Mvvm" Version="1.0.46" />
         <PackageVersion Include="ReactiveMarbles.PropertyChanged" Version="2.0.27" />
-        <PackageVersion Include="ReactiveMarbles.ObservableEvents.SourceGenerator" Version="1.1.4">
+        <PackageVersion Include="ReactiveMarbles.ObservableEvents.SourceGenerator" Version="1.2.3">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageVersion>
         <PackageVersion Include="Refit" Version="6.3.2" />
         <PackageVersion Include="Rocket.Surgery.Reactive.Extensions" Version="11.4.2" />
         <PackageVersion Include="Rocket.Surgery.Task.Extensions" Version="11.4.2" />
-        <PackageVersion Include="Rocket.Surgery.Airframe.Core" Version="0.9.1" />
-        <PackageVersion Include="Rocket.Surgery.Airframe.Forms" Version="0.9.1" />
-        <PackageVersion Include="Rocket.Surgery.Airframe.Microsoft.Extensions.DependencyInjection" Version="0.9.1" />
-        <PackageVersion Include="Rocket.Surgery.Airframe.Shiny" Version="0.9.1" />
-        <PackageVersion Include="Rocket.Surgery.Xamarin.Essentials" Version="0.4.1" />
-        <PackageVersion Include="Rocket.Surgery.Xamarin.Essentials.Abstractions" Version="0.4.1" />
+        <PackageVersion Include="Rocket.Surgery.Airframe.Core" Version="0.9.2" />
+        <PackageVersion Include="Rocket.Surgery.Airframe.Forms" Version="0.9.2" />
+        <PackageVersion Include="Rocket.Surgery.Airframe.Microsoft.Extensions.DependencyInjection" Version="0.9.2" />
+        <PackageVersion Include="Rocket.Surgery.Airframe.Shiny" Version="0.9.2" />
         <PackageVersion Include="Rg.Plugins.Popup" Version="2.0.0.11" />
         <PackageVersion Include="Serilog.Exceptions" Version="5.7.0" />
         <PackageVersion Include="Serilog.Formatting.Compact" Version="1.1.0" />
@@ -77,38 +74,26 @@
         <PackageVersion Include="Serilog.Sinks.File" Version="5.0.0" />
         <PackageVersion Include="Serilog.Sinks.Xamarin" Version="0.2.0.64" />
         <PackageVersion Include="Serilog.Sinks.Console" Version="3.0.1" />
-        <PackageVersion Include="Shiny" Version="2.2.0.2829" />
-        <PackageVersion Include="Shiny.Core" Version="2.2.0.2829" />
-        <PackageVersion Include="Shiny.Locations" Version="2.2.0.2829" />
-        <PackageVersion Include="Shiny.Notifications" Version="2.2.0.2829" />
-        <PackageVersion Include="Splat" Version="11.1.1" />
-        <PackageVersion Include="Splat.Serilog" Version="11.1.1" />
-        <PackageVersion Include="Splat.Microsoft.Extensions.Logging" Version="11.1.1" />
-        <PackageVersion Include="Splat.Microsoft.Extensions.DependencyInjection" Version="11.1.1" />
+        <PackageVersion Include="Shiny" Version="2.7.1" />
+        <PackageVersion Include="Shiny.Core" Version="2.7.1" />
+        <PackageVersion Include="Shiny.Locations" Version="2.7.1" />
+        <PackageVersion Include="Shiny.Notifications" Version="2.7.1" />
+        <PackageVersion Include="Splat" Version="14.6.1" />
+        <PackageVersion Include="Splat.Serilog" Version="14.6.1" />
+        <PackageVersion Include="Splat.Microsoft.Extensions.Logging" Version="14.6.1" />
+        <PackageVersion Include="Splat.Microsoft.Extensions.DependencyInjection" Version="14.6.1" />
         <PackageVersion Include="Stateless" Version="5.12.0" />
-        <PackageVersion Include="StrawberryShake.Transport.Http" Version="12.12.0" />
-        <PackageVersion Include="StrawberryShake.CodeGeneration.CSharp.Analyzers" Version="12.12.0" />
         <PackageVersion Include="System.Reactive" Version="5.0.0" />
         <PackageVersion Include="System.Runtime.InteropServices.WindowsRuntime" Version="4.3.0" />
         <PackageVersion Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
         <PackageVersion Include="TypeNameFormatter.Sources" Version="1.1.1" />
-        <PackageVersion Include="Xamarin.Essentials" Version="1.7.1" />
-        <PackageVersion Include="Xamarin.Essentials.Interfaces" Version="1.7.1" />
-        <PackageVersion Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
-        <PackageVersion Include="Xamarin.FFImageLoading.Transformations" Version="2.4.11.982" />
-        <PackageVersion Include="Xamarin.Forms" Version="5.0.0.2401" />
-        <PackageVersion Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
-        <PackageVersion Include="Xamarin.Forms.Maps" Version="5.0.0.2401" />
-        <PackageVersion Include="XF.Material" Version="1.7.8" />
     </ItemGroup>
     <ItemGroup>
         <PackageVersion Include="coverlet.msbuild" Version="2.5.1" />
-        <PackageVersion Include="Divergic.Logging.Xunit" Version="4.1.0" />
         <PackageVersion Include="FluentAssertions" Version="5.6.0" />
         <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
         <PackageVersion Include="Microsoft.Reactive.Testing" Version="5.0.0" />
         <PackageVersion Include="NSubstitute" Version="4.2.1" />
-        <PackageVersion Include="ReactiveUI.Testing" Version="13.3.2" />
         <PackageVersion Include="Rocket.Surgery.Extensions.Testing.Fixtures" Version="7.0.2" />
         <PackageVersion Include="xunit" Version="2.4.1" />
         <PackageVersion Include="xunit.runner.visualstudio" Version="2.4.1" />
