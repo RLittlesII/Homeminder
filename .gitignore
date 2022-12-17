@@ -348,3 +348,23 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Xamarin.Android Resource.Designer.cs files
+**/*.Android/**/[Rr]esource.[Dd]esigner.cs
+**/*.Droid/**/[Rr]esource.[Dd]esigner.cs
+**/Android/**/[Rr]esource.[Dd]esigner.cs
+**/Droid/**/[Rr]esource.[Dd]esigner.cs
+
+# macOS
+.DS_Store
+
+# jetbrains
+.idea/
+
+# coverlet
+coverage.json
+
+# act
+.actrc
+.env
+.secrets
