@@ -1,0 +1,3 @@
+[submodule "Prism.Maui"]
+	path = Prism.Maui
+	url = git@github.com:PrismLibrary/Prism.Maui.git
