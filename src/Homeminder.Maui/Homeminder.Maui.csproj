@@ -50,7 +50,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Prism.Maui" />
+<!--        <PackageReference Include="Prism.Maui" />-->
         <PackageReference Include="Prism.DryIoc.Maui" />
         <PackageReference Include="ReactiveMarbles.Mvvm" />
         <PackageReference Include="ReactiveUI.Maui" />

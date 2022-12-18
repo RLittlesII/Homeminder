@@ -1,3 +1,4 @@
+using Prism.Ioc;
 using Rocket.Surgery.Airframe.Microsoft.Extensions.DependencyInjection;
 
 namespace Homeminder.Maui;

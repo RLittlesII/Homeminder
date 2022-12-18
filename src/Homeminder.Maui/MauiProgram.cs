@@ -1,4 +1,6 @@
-﻿using Prism.DryIoc;
+﻿using Prism;
+using Prism.DryIoc;
+using Prism.Navigation;
 using Rocket.Surgery.Airframe.Microsoft.Extensions.DependencyInjection;
 using Shiny;
 

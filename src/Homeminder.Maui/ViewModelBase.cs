@@ -3,6 +3,7 @@ using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
 using Microsoft.Extensions.Logging;
+using Prism.Navigation;
 using ReactiveMarbles.Mvvm;
 using ReactiveUI;
 

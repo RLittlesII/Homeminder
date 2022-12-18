@@ -1,3 +1,5 @@
+using Prism.Navigation;
+
 namespace Homeminder.Maui;
 
 public static class INavigationServiceExtensions

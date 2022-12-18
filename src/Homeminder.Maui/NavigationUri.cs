@@ -2,9 +2,14 @@ namespace Homeminder.Maui;
 
 public static class NavigationUri
 {
-    public static Uri MainNavigation => new Uri($"{Root}{NavigationPage}/{nameof(MainPage)}");
+    // NOTE: [rlittlesii: December 18, 2022] Expactation is this works.
+    // public static Uri MainNavigation => new Uri($"{Root}{NavigationPage}/{nameof(MainPage)}");
 
-    public static Uri Splash => new Uri($"/{NavigationPage}/{nameof(SplashScreen)}");
+    // public static Uri MainNavigation => new($"{Root}{NavigationPage}/{nameof(MainPage)}");
+
+    public static Uri MainNavigation => new($"{nameof(MainPage)}");
+
+    public static Uri Splash => new($"/{NavigationPage}/{nameof(SplashScreen)}");
 
     public static string Back => "../";
 
