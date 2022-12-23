@@ -23,3 +23,4 @@ This app idea came directly from a community member.  It is an app I had conside
     - Next Week
     - Next Month
 - [ ] Task Completion
+- [ ] Weather Related Home Alerts
