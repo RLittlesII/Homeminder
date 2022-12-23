@@ -7,7 +7,7 @@ public static class NavigationUri
 
     // public static Uri MainNavigation => new($"{Root}{NavigationPage}/{nameof(MainPage)}");
 
-    public static Uri MainNavigation => new($"{nameof(MainPage)}");
+    public static Uri MainNavigation => new($"/{NavigationPage}/{nameof(MainPage)}");
 
     public static Uri Splash => new($"/{NavigationPage}/{nameof(SplashScreen)}");
 

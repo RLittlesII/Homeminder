@@ -59,4 +59,9 @@
         <PackageReference Include="Shiny" />
         <PackageReference Include="Shiny.Locations" />
     </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Prism.Maui\src\Prism.Maui.Rx\Prism.Maui.Rx.csproj" />
+      <ProjectReference Include="..\..\Prism.Maui\src\Prism.Maui\Prism.Maui.csproj" />
+    </ItemGroup>
 </Project>

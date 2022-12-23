@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Reactive;
 using System.Reactive.Linq;
 using Microsoft.Extensions.Logging;
@@ -8,6 +9,7 @@ using Rocket.Surgery.Airframe;
 
 namespace Homeminder.Maui;
 
+[SuppressMessage("Interoperability", "CA1416:Validate platform compatibility")]
 public class SplashViewModel : ViewModelBase
 {
     public SplashViewModel(INavigationService navigationService,
