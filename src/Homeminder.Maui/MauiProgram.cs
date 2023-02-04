@@ -23,6 +23,8 @@ public static class MauiProgram
                             .AddModule<ShinyModule>()
                             .AddModule<PrismNavigationModule>()
                             .AddModule<MarblesModule>()
+                            .AddModule<SplashModule>()
+                            .RegisterGlobalNavigationObserver()
                             .AddLogging(configure => configure.AddConsole()))
                     .OnAppStart((_, navigation) => navigation.NavigateAsync(NavigationUri.Splash).HandleResult())
                     .AddGlobalNavigationObserver((provider, context) => context.Subscribe(navigationRequestContext =>
@@ -39,16 +41,20 @@ public static class MauiProgram
                             logger.LogInformation("Navigation: {RequestType}", navigationRequestContext.Type);
                         }
 
-                        var status = navigationRequestContext.Cancelled ? "Cancelled" :
-                            navigationRequestContext.Result.Success ? "Success" : "Failed";
+                        var status = navigationRequestContext.Cancelled
+                                         ? "Cancelled"
+                                         : navigationRequestContext.Result.Success
+                                             ? "Success"
+                                             : "Failed";
                         logger.LogInformation("Result: {Status}", status);
 
-                        if (status == "Failed" &&
-                            !string.IsNullOrEmpty(navigationRequestContext.Result?.Exception?.Message))
+                        if (status == "Failed"
+                         && !string.IsNullOrEmpty(navigationRequestContext.Result?.Exception?.Message))
                         {
                             var exception = navigationRequestContext.Result.Exception;
                             logger.LogError(exception, exception.Message);
-                        }})))
+                        }
+                    })))
             .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

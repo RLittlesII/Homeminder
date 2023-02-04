@@ -2,6 +2,7 @@ using System.Reactive;
 using System.Reactive.Linq;
 using Microsoft.Extensions.Logging;
 using ReactiveMarbles.Mvvm;
+using Rocket.Surgery.Airframe;
 
 namespace Homeminder.Maui;
 

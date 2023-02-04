@@ -1,4 +1,5 @@
 using System.Reactive;
+using System.Reactive.Concurrency;
 using System.Reactive.Linq;
 using Microsoft.Extensions.Logging;
 using Rocket.Surgery.Airframe;
@@ -22,10 +23,13 @@ public class HomeminderStartup : IApplicationStartup
     }
 
     /// <inheritdoc/>
-    public IObservable<Unit> Startup() => _startupTasks
+    public IObservable<Unit> Startup(int concurrentOperations) =>
+        Startup(concurrentOperations, CurrentThreadScheduler.Instance);
+
+    public IObservable<Unit> Startup(int concurrentOperations, IScheduler scheduler) => _startupTasks
         .Where(operation => operation.CanExecute())
         .Select(operation => operation.Start())
-        .Merge()
+        .Merge(concurrentOperations)
         .Do(_ => { })
         .PublishLast()
         .RefCount()

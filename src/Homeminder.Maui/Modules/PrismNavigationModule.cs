@@ -1,4 +1,3 @@
-using Prism.Ioc;
 using Rocket.Surgery.Airframe.Microsoft.Extensions.DependencyInjection;
 
 namespace Homeminder.Maui;
@@ -11,7 +10,6 @@ public class PrismNavigationModule : ServiceCollectionModule
         // serviceCollection.UseGps<Gps>();
         return serviceCollection
             .RegisterForNavigation<NavigationPage>(nameof(NavigationPage))
-            .RegisterForNavigation<MainPage, MainViewModel>(nameof(MainPage))
-            .RegisterForNavigation<SplashScreen, SplashViewModel>(nameof(SplashScreen));
+            .RegisterForNavigation<MainPage, MainViewModel>(nameof(MainPage));
     }
 }

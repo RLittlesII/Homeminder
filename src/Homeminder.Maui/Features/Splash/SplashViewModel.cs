@@ -2,7 +2,6 @@ using System.Diagnostics.CodeAnalysis;
 using System.Reactive;
 using System.Reactive.Linq;
 using Microsoft.Extensions.Logging;
-using Prism.Navigation;
 using ReactiveMarbles.Mvvm;
 using ReactiveUI;
 using Rocket.Surgery.Airframe;
