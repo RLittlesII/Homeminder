@@ -26,5 +26,20 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/appicon.appiconset</string>
+
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Say something useful here that your users will understand</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Say something useful here that your users will understand</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Say something useful here that your users will understand</string>
+
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>processing</string>
+        <string>fetch</string>
+        <string>location</string>
+        <string>remote-notification</string>
+    </array>
 </dict>
 </plist>

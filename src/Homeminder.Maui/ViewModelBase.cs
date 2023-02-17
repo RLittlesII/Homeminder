@@ -3,7 +3,6 @@ using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
 using Microsoft.Extensions.Logging;
-using Prism.Navigation;
 using ReactiveMarbles.Mvvm;
 using ReactiveUI;
 
@@ -39,10 +38,10 @@ public class ViewModelBase : RxDisposableObject, INavigatedAware, IDestructible,
     void IDestructible.Destroy() => Dispose(true);
 
     /// <inheritdoc />
-    void IReactiveObject.RaisePropertyChanging(PropertyChangingEventArgs args) => RaisePropertyChanging(args.PropertyName);
+    void IReactiveObject.RaisePropertyChanging(PropertyChangingEventArgs args) => RaisePropertyChanging(args.PropertyName ?? throw new InvalidOperationException());
 
     /// <inheritdoc />
-    void IReactiveObject.RaisePropertyChanged(PropertyChangedEventArgs args) => RaisePropertyChanged(args.PropertyName);
+    void IReactiveObject.RaisePropertyChanged(PropertyChangedEventArgs args) => RaisePropertyChanged(args.PropertyName ?? throw new InvalidOperationException());
 
     /// <inheritdoc />
     protected override void Dispose(bool disposing) => Garbage.Dispose();

@@ -16,8 +16,8 @@ public class SplashViewModel : ViewModelBase
         ICoreRegistration coreRegistration,
         ILoggerFactory loggerFactory) : base(loggerFactory)
     {
-        Navigate = ReactiveCommand.Create(() => ExecuteNavigateWithUri(navigationService), outputScheduler: coreRegistration.MainThreadScheduler);
-        Startup = ReactiveCommand.CreateFromObservable<INavigationParameters, Unit>(_ => applicationStartup.Startup().Do(_ => { }), outputScheduler: coreRegistration.MainThreadScheduler);
+        Navigate = ReactiveCommand.Create(() => ExecuteNavigateWithUri(navigationService));
+        Startup = ReactiveCommand.CreateFromObservable<INavigationParameters, Unit>(_ => applicationStartup.Startup());
 
         Startup
             .IsExecuting
@@ -32,13 +32,6 @@ public class SplashViewModel : ViewModelBase
             .Delay(TimeSpan.FromSeconds(3))
             .ObserveOn(coreRegistration.MainThreadScheduler)
             .InvokeCommand(this, viewModel => viewModel.Navigate);
-
-        void ExecuteNavigateWithBuilder(INavigationService navigation) =>
-            navigation
-                .CreateBuilder()
-                .AddSegment("MainPage")
-                .AddNavigationPage()
-                .Navigate();
 
         void ExecuteNavigateWithUri(INavigationService navigation) =>
             navigation
